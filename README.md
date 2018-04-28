@@ -13,3 +13,5 @@
 3. numer 3
 
 [ZOBACZ DEMO!!!](https://annapralat.github.io/minimo/)
+
+![](https://images.pexels.com/photos/891252/pexels-photo-891252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
