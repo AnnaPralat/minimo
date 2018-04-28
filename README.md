@@ -17,6 +17,6 @@
 ![](https://images.pexels.com/photos/891252/pexels-photo-891252.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)
 
 Rzeczy do zrobienia:
-- [] do zrobienia
+- [x] zrobione
 - [] do zrobienia 2
 - [] dodać obrazki
