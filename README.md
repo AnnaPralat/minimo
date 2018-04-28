@@ -18,5 +18,9 @@
 
 Rzeczy do zrobienia:
 - [x] zrobione
-- [] do zrobienia 2
-- [] dodać obrazki
+- [ ] do zrobienia 2
+- [ ] dodać obrazki
+
+```
+npm install
+```
