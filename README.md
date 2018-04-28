@@ -30,3 +30,13 @@ Rzeczy do zrobienia:
   width: 100%;
  }
  ```
+ 
+ *italic*
+ 
+ **strong**
+ 
+~~linethtough~~ 
+
+ ---
+ 
+ ___
