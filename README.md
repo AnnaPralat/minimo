@@ -21,6 +21,12 @@ Rzeczy do zrobienia:
 - [ ] do zrobienia 2
 - [ ] dodać obrazki
 
+```html
+<header class="header">nagłówek</header>
 ```
-npm install
-```
+```css
+.header {
+  border: 1px solid black;
+  width: 100%;
+ }
+ ```
