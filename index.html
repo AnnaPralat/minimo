@@ -1,146 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Minimo</title>
+  <title> CV CREW </title>
 
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&amp;subset=latin-ext" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+  <script src="jquery.scrollTo.min.js"></script>
+
+<script>
+
+  jQuery(function($)
+  {
+    //zresetuj scrolla
+    $.scrollTo(0);
+
+    $('.s-crew').click(function() { $.scrollTo($('.crew'), 1000); });
+    $('.s-offers').click(function() { $.scrollTo($('.offers'), 1000); });
+    $('.s-cooperation').click(function() { $.scrollTo($('.cooperation'), 1000); });
+    $('.s-contact').click(function() { $.scrollTo($('.contact'), 1000); });
+    $('.s-socials').click(function() { $.scrollTo($('.socials'), 1000); });
+
+    $('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+  }
+  );
+
+  //pokaż podczas przewijania
+  $(window).scroll(function()
+  {
+    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+    else $('.scrollup').fadeOut();
+  }
+  );
+
+</script>
+
 </head>
+
 <body>
+  <a href="#" class="scrollup"> </a>
+
   <header class="header">
     <nav class="navbar">
-      <a class="logo" href="#">
-        <img src="images/logo.png" alt="">
-      </a>
-
-      <ul class="menu">
-        <li class="menu-item">
-          <a class="menu-link" href="#">Lifestyle</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">Photodiary</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">Music</a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">Travel</a>
-        </li>
-      </ul>
-
-      <button type="button" class="menu-button">
-        <span class="menu-button-item"></span>
-        <span class="menu-button-item"></span>
-      </button>
+        <ul class="menu">
+          <li class="menu-item"> <a class="menu-link" href="#"> Strona Główna </a>
+          <li class="menu-item s-crew"> <a class="menu-link" href="#"> Ekipa </a>
+          <li class="menu-item s-offers"> <a class="menu-link" href="#"> Oferta </a>
+          <li class="menu-item s-cooperation"> <a class="menu-link" href="#"> Współpraca </a>
+          <li class="menu-item s-contact"> <a class="menu-link" href="#"> Kontakt </a>
+          <li class="menu-item s-socials"> <a class="menu-link" href="#"> Social Media </a>
+        </ul>
     </nav>
 
-    <img class="image" src="images/hero-bg.png" alt="">
+    <embed src="" class="film">
 
-    <div class="header-content">
-      <h1 class="heading">The perfect weekend getaway</h1>
-
-      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur deleniti modi quidem sint voluptas repellendus, non! Facilis ipsa nisi possimus deleniti. Unde, qui atque laudantium similique veritatis voluptas vero magnam.</p>
-    </div>
+    <!-- <img src="images/header-image.jpg" alt="" class="header-image"> -->
   </header>
 
-  <main>
-    <section class="articles">
-      <article class="article">
-        <img src="images/article1.png" alt="" class="image">
-        <p class="category">Lifestyle</p>
-        <h2 class="article-heading">More than just a music festival</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sunt tenetur neque beatae similique, possimus aliquam ipsam iste ipsum. Fugit aut odit, eos in qui doloremque nostrum amet similique aliquam?<a class="article-link" href="#">read more</a></p>
-      </article>
-
-      <article class="article">
-        <img src="images/article2.png" alt="" class="image">
-        <p class="category">Lifestyle</p>
-        <h2 class="article-heading">More than just a music festival</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur aspernatur et minima sunt optio dignissimos, veritatis ipsam ipsum impedit ea maxime labore voluptatum officia placeat mollitia assumenda, officiis eligendi.<a class="article-link" href="#">read more</a></p>
-      </article>
-
-      <article class="article">
-        <img src="images/article3.png" alt="" class="image">
-        <p class="category">Photodiary</p>
-        <h2 class="article-heading">More than just a music festival</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore rem fuga reprehenderit maxime facilis maiores ipsum iure quibusdam aliquid molestiae, nesciunt sed quae, autem enim, pariatur incidunt magni. Debitis, necessitatibus?<a class="article-link" href="#">read more</a></p>
-      </article>
-
-      <article class="article">
-        <img src="images/article4.png" alt="" class="image">
-        <p class="category">Photodiary</p>
-        <h2 class="article-heading">More than just a music festival</h2>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rerum, quidem ea dolorum dicta amet molestias ipsum quos? Nobis quos consequuntur laudantium laboriosam. Magni cupiditate, voluptatem sequi ducimus, quasi facere.<a class="article-link" href="#">read more</a></p>
-      </article>
-    </section>
-
-    <section class="newsletter">
-      <h2 class="newsletter-heading">Sign up for our newsletter!</h2>
-
-      <form class="form">
-        <div class="form-group">
-          <input type="email" placeholder="Enter a vaild email address" class="form-input">
-          <button type="submit" class="form-button">
-            <img src="images/send-icon.png" alt="">
-          </button>
+  <main class="main">
+    <section class="crew">
+      <p class="headline"> Ekipa </p>
+      <div class="members">
+        <div class="photo">
+          <img src="images/crew1.jpg" alt="ktos" class="image">
+          <p class="description"> <span class="name"> Maks </span> <br/>
+          Montażysta </br>
+          Montaż krótkich etiud filmowych licealistów w tym filmów kręconych w jeden dzień zdjęciowy. </br>
+          Montaż teledysków i krótkich filmów muzycznych. </br>
+          Montaż making off'ów teledysków i filmów.
+          </p>
         </div>
-      </form>
-    </section>
-
-    <section>
-      <div class="articles">
-        <article class="article">
-          <img src="images/article1.png" alt="" class="image">
-          <p class="category">Photodiary</p>
-          <h2 class="article-heading">More than just a music festival</h2>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sunt tenetur neque beatae similique, possimus aliquam ipsam iste ipsum. Fugit aut odit, eos in qui doloremque nostrum amet similique aliquam?<a class="article-link" href="#">read more</a></p>
-        </article>
-
-        <article class="article">
-          <img src="images/article2.png" alt="" class="image">
-          <p class="category">Photodiary</p>
-          <h2 class="article-heading">More than just a music festival</h2>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur aspernatur et minima sunt optio dignissimos, veritatis ipsam ipsum impedit ea maxime labore voluptatum officia placeat mollitia assumenda, officiis eligendi.<a class="article-link" href="#">read more</a></p>
-        </article>
+        <div class="photo">
+          <img src="images/crew2.jpg" alt="ktos" class="image">
+          <p class="description"> <span class="name"> Maciek </span> <br/>
+          Operator kamery </br>
+          Nagrywanie filmów krótkometrażowych i teledysków. </br>
+          Realizacja filmików reklamowych, fotorelacja i videorelacja na eventach i obozach. </br>
+          Sesje modowe i zdjęcia do portfolio aktorskich
+          Zainteresowanie fotografią uliczną (street photography) i sesjami plenerowymi. </br>
+          "Każda moja praca ma w sobie coś swojego, ale każda zrobiona jest, najlepiej jak się dało." </p>
+        </div>
+        <div class="photo">
+          <img src="images/crew3.jpg" alt="ktos" class="image">
+          <p class="description"> <span class="name"> Szymon </span> <br/>
+          Założyciel CV CREW </br>
+          Produkcent / Fotograf </br>
+          Laureat 48hfp 2017 wraz z ekipą FCKP PROD. </br>
+          Laureat konkursu filmowego Ministerstwa Edukacji Narodowej w 2016 roku.</br>
+          Wyróżnienie w konkursie fotograficznym PORTRET 2018. </br>
+          Producent oraz realizator licznych klipów wideo od 2014 roku poszukujący wyzwań związanych z branżą filmową, uczeń warszawskiego Liceum Filmowego. </br>
+          Fotograf modowy działający samoistnie jak i komercyjnie. </br>
+          "Fotografia modowa zaraziła mnie obsesją na punkcie światła, natomiast światło sprawiło, że moje spojrzenie na film przerodziło się w pasję do tworzenia." </p>
+        </div>
+        <div class="photo">
+          <img src="images/crew4.jpg" alt="ktos" class="image">
+          <p class="description"> <span class="name"> Andrzej </span> <br/>
+          Kierownik planu </p>
+        </div>
+        <div class="photo">
+          <img src="images/crew5.jpg" alt="ktos" class="image">
+          <p class="description"> <span class="name"> Gustaw </span> <br/>
+          CGI / Animator </p>
+        </div>
       </div>
 
-      <a href="#" class="load-more">Load more</a>
+      <div class="members2">
+        <div class="mini-photo">
+          <img src="images/crew1.jpg" alt="ktos" class="mini-image">
+          <p class="mini-descrip"> <span class="name"> Maja </span> </br> Charakteryzacja
+          Uczestnictwo w drugiej edycji kampanii Anji Rubik - sexed. </br>
+          Jury w Docs Against Gravity. </br>
+          Kostiumograf w projekcie z Teatrem Rozmaitości. </p>
+        </div>
+        <div class="mini-photo">
+          <img src="images/crew2.jpg" alt="ktos" class="mini-image">
+          <p class="mini-descrip"> <span class="name"> Albert </span> </br>
+          Mistrz oświetlenia </br>
+          Laureat 48hfp 2017 wraz z ekipą FCKP PROD. </br>
+          Gaffer / best boy w licznych etiudach studenckich.  </p>
+        </div>
+        <div class="mini-photo">
+          <img src="images/crew3.jpg" alt="ktos" class="mini-image">
+          <p class="mini-descrip"> <span class="name"> Filip Brzeszczyński </span> </br>
+          Operator kamery
+          Realizacja teledysków na wysokim poziomie w zasięgu kilkuset tysięcy odsłon. </br>
+          Praca w serwisie internetowym "YouTube" jako operator kamery / montażysta z twórcami mającymi duże doświadczenie. </br>
+          Realizacja filmów promocyjnych typu prezentacje oraz reklamy. </br>
+          Relacje filmowe z masowych imprez takich jak na przykład międzynarodowy turniej e-sportowy tzw. "INTEL EXTREME MASTERS" </p>
+        </div>
+        <div class="mini-photo">
+          <img src="images/crew4.jpg" alt="ktos" class="mini-image">
+          <p class="mini-descrip"> <span class="name"> Karolina </span> </br>
+            Reżyser obsady </br>
+            Reżyser obsady w filmach krótkometrażowych, m. in. “Uzdrowienie” i “Miasteczko Cud” (oba 30 min, w produkcji). </br>
+            Kierownik produkcji spotów, etiud i filmów krótkometrażowych, m. in 12- minutowego mastershota “Heartbeat” (2018) czy filmu “Rudy” (30 min, w produkcji) </p>
+        </div>
+        <div class="mini-photo">
+          <img src="images/crew5.jpg" alt="ktos" class="mini-image">
+          <p class="mini-descrip"> <span class="name"> Karol </span> </br>
+          Oświetleniowiec </p>
+        </div>
+        <div class="mini-photo">
+          <img src="images/crew1.jpg" alt="ktos" class="mini-image">
+          <p class="mini-descrip"> <span class="name"> Kajetan </span> </br> Techniczny </p>
+        </div>
+        <div class="mini-photo">
+          <img src="images/crew2.jpg" alt="ktos" class="mini-image">
+          <p class="mini-descrip"> <span class="name"> Szymon Wiktor </span> </br> Praesent nec lobortis quam. Mauris vulputate aliquam felis, quis pretium purus euismod id. Morbi ut lorem tincidunt, posuere elit eget, fermentum orci. Etiam et ultrices justo. Donec laoreet vitae mauris sit amet rutrum. </p>
+        </div>
+        <div class="mini-photo">
+          <img src="images/crew3.jpg" alt="ktos" class="mini-image">
+          <p class="mini-descrip"> <span class="name"> Szymon Wiktor </span> </br> Praesent nec lobortis quam. Mauris vulputate aliquam felis, quis pretium purus euismod id. Morbi ut lorem tincidunt, posuere elit eget, fermentum orci. Etiam et ultrices justo. Donec laoreet vitae mauris sit amet rutrum. </p>
+        </div>
+        <div class="mini-photo">
+          <img src="images/crew4.jpg" alt="ktos" class="mini-image">
+          <p class="mini-descrip"> <span class="name"> Szymon Wiktor </span> </br> Praesent nec lobortis quam. Mauris vulputate aliquam felis, quis pretium purus euismod id. Morbi ut lorem tincidunt, posuere elit eget, fermentum orci. Etiam et ultrices justo. </p>
+        </div>
+        <div class="mini-photo">
+          <img src="images/crew5.jpg" alt="ktos" class="mini-image">
+          <p class="mini-descrip"> <span class="name"> Szymon Wiktor </span> </br> Praesent nec lobortis quam. Mauris vulputate aliquam felis, quis pretium purus euismod id. Morbi ut lorem tincidunt, posuere elit eget, fermentum orci. Etiam et ultrices justo. Donec laoreet vitae mauris sit amet rutrum. </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers">
+      <p class="headline"> Oferta </p>
+      <div class="offer">
+        <p class="offer-text"> <span class="offer-head"> Realizacja teledysków </span> </br>
+        Rozpoczynając od pierwszego spojrzenia i uściśnięcia dłoni, aż po finalizację gotowego pliku na nośniku danych. Cały ten czas jesteśmy do Państwa dyspozycji. W każdy projekt i videoclip wkładamy CAŁE swoje serce. Ze szczególną uwagą dopracowujemy najmniejsze detale. Ponadto jesteśmy otwarci na wszelkie propozycje zarówno profesjonalnych wytwórni, jak i indywidualnych kontrahentów. </p>
+        <img src="images/orkiestra.jpg" alt="" class="offer-image">
+        <img src="images/camera.jpg" alt="" class="offer-image">
+      </div>
+      <div class="offer">
+        <p class="offer-text"> <span class="offer-head"> Filmy reklamowe i promocyjne </span> </br>
+        Oryginalność i kreatywność spotu, pasja oraz realizacja wymagań petentów są najlepszym sposobem na spełnienie Państwa najśmielszych oczekiwań, a co za tym idzie, osiągnięcia maksymalnego poziomu satysfakcji oraz trafienia do docelowej grupy odbiorców.  </p>
+        <img src="images/promo1.jpg" alt="" class="offer-image">
+        <img src="images/promo2.jpg" alt="" class="offer-image">
+      </div>
+      <div class="offer">
+        <p class="offer-text"> <span class="offer-head"> Projekty studyjne </span> </br>
+        W studio fotograficzno-filmowym nasza załoga spędziła mnóstwo godzin, oddając się przy tym bardzo ciężkiej i długiej pracy. Dzięki temu jesteśmy w stanie zaoferować Państwu szeroką ofertę zdjęć oraz nagrań studyjnych, które w połączeniu z naszą postprodukcją zadowolą nawet najbardziej wymagających klientów. </p>
+        <img src="images/girl1.jpg" alt="" class="offer-image">
+        <img src="images/girl2.jpg" alt="" class="offer-image">
+      </div>
+      <div class="offer">
+        <p class="offer-text"> <span class="offer-head"> Produkcje eventowe </span> </br>
+        Zapewniamy Państwu udokumentowanie multimedialne z targów, imprez firmowych czy wydarzeń okolicznościowych w najlepszej jakości! Będą one posiadały nie tylko charakter pamiątkowy, lecz będą również idealną promocją w postaci klipów wideo czy też zdjęć. </p>
+        <img src="images/szerm.jpg" alt="" class="offer-image">
+        <img src="images/impr.jpg" alt="" class="offer-image">
+      </div>
+      <div class="offer">
+        <p class="offer-text"> <span class="offer-head"> Postprodukcja zdjęć i klipów </span> </br>
+        Jeśli mają Państwo zamiar usprawnić swój materiał, dostarczony naszej firmie, na etapie postprodukcyjnym, czy też wyrażają Państwo chęć na wzbogacenie gotowego materiału o elementy graficzno-wizualne, z WIELKĄ chęcią i zaangażowaniem wykonamy powierzone nam zlecenie. </p>
+        <img src="images/artur.jpg" alt="" class="offer-image">
+        <img src="images/N2.jpg" alt="" class="offer-image">
+        <img src="images/N1.jpg" alt="" class="offer-image">
+      </div>
+    </section>
+
+    <section class="cooperation">
+      <p class="headline"> Współpraca </p>
+      <div class="co-op">
+        <p class="co-op-text"> Quisque vel quam quis ex bibendum cursus a ut arcu. Nunc vel nisl non nisi viverra vestibulum. Sed quam nulla, volutpat id fringilla ut, molestie sed ex. Ut rhoncus mi in elementum aliquet. In auctor ipsum arcu, sollicitudin posuere justo tincidunt eu. Ut hendrerit, risus vitae vestibulum vehicula, leo odio consectetur diam, at gravida mi mi sit amet ante. Suspendisse vitae erat nec odio vehicula auctor. Nulla mi nisi, dictum ut convallis at, volutpat ut neque. Cras non ligula mi. Donec porta, tellus quis ultricies imperdiet, felis purus accumsan ex, in lobortis sapien mi eu elit. Nam nisi nisl, volutpat vitae turpis nec, ultricies efficitur lectus. In congue elementum est sed posuere. </p>
+        <img src="images/hands.jpg" alt="" class="co-op-image">
+      </div>
+    </section>
+
+    <section class="contact">
+      <p class="headline"> Kontakt </p>
+      <!-- wysuwana koperta ze skrzynki -->
+      <div class="cont">
+        <img src="images/letterbox.jpg" alt="letterbox" class="image-letterbox">
+        <img src="images/letter.jpg" alt="envelope" class="image-envelope">
+        <p class="text-contact"> tel: 923 287 382 </br> email: blablabla@gmail.com </br> itp... </p>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-wrapper">
-      <ul class="footer-menu">
-        <li><a href="#">Terms and conditions</a></li>
-        <li><a href="#">Policy</a></li>
-      </ul>
-
-      <ul class="socials">
-        <li class="socials-item">
-          <a class="socials-link" href="#">
-            <img class="socials-icon" src="images/facebook.svg" alt="Facebook">
-          </a>
-        </li>
-
-        <li class="socials-item">
-          <a class="socials-link" href="#">
-            <img class="socials-icon" src="images/twitter.svg" alt="Twitter">
-          </a>
-        </li>
-
-        <li class="socials-item">
-          <a class="socials-link" href="#">
-            <img class="socials-icon" src="images/instagram.svg" alt="Instagram">
-          </a>
-        </li>
-      </ul>
-    </div>
+    <ul class="socials">
+      <li class="social-item">
+        <a class="social-link" href="#">
+          <img src="images/yt.jpg" class="social-icon" alt=youtube>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link" href="#">
+          <img src="images/fb.jpg" class="social-icon" alt=facebook>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link" href="#">
+          <img src="images/ig.jpg" class="social-icon" alt=instagram>
+        </a>
+      </li>
+    </ul>
   </footer>
+
+
 </body>
 </html>
